@@ -25,4 +25,11 @@ str2=def
 
 [ "${str1}" \< "${str2}" ] && echo "LESS THAN IS $(isFalse $?)"
 
+
 [ "${str1}" \> "${str2}" ] || echo "GREATER THAN IS $(isFalse $?) "  # false
+
+if [ ${str1} -o -a ${str2} ]; then
+  echo TRUE
+else
+  echo FALSE
+fi
