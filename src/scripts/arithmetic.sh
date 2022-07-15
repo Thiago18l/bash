@@ -12,3 +12,11 @@ if (( total > max )); then
 else
   echo MAX is GREATER than TOTAL
 fi
+
+
+# Arithmetic expansions
+
+echo "1: $(( 1 + 12 )) |" "2: $(( 12 * 10 )) |" "3: $(( 16 / 4 )) |" \
+"4: $(( 6 - 9))"
+
+echo "$(( 3 + 4 * 5 )) |" "$(( (3 + 4) * 5 ))" # first is 23 and the second is 35
